@@ -32,23 +32,19 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    customLaunchers: {
-      'FirefoxHeadless': {
-        base: 'Firefox',
-        flags: [
-          '-headless',
-        ],
-        prefs: {
-          'network.proxy.type': 0
-        }
-      }
-    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['FirefoxHeadless'],
+    customLaunchers: {
+      FirefoxHeadlessNoSandbox: {
+        base: 'FirefoxHeadless',
+        flags:['--no-sandbox', 'no-proxy-server']
+      }
+    },
+    captureTimeout: 180000,
     singleRun: false,
     restartOnFileChange: true
   });
