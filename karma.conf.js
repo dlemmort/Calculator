@@ -32,6 +32,17 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
+    customLaunchers: {
+      'FirefoxHeadless': {
+        base: 'Firefox',
+        flags: [
+          '-headless',
+        ],
+        prefs: {
+          'network.proxy.type': 0
+        }
+      }
+    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
