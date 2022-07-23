@@ -37,11 +37,11 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['FirefoxHeadless'],
+    browsers: ['ChromeHeadlessNoSandbox'],
     customLaunchers: {
-      FirefoxHeadlessNoSandbox: {
-        base: 'FirefoxHeadless',
-        flags:['--no-sandbox', 'no-proxy-server']
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags:['--no-sandbox']
       }
     },
     captureTimeout: 180000,
