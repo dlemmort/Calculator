@@ -38,6 +38,12 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['ChromeHeadless'],
+    customLaunchers:{
+      ChromeHeadless:{
+        base:'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     captureTimeout: 180000,
     singleRun: false,
     restartOnFileChange: true
