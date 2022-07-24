@@ -37,10 +37,10 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['FirefoxHeadless'],
+    browsers: ['ChromeHeadless'],
     customLaunchers: {
-      'FirefoxHeadless': {
-        base: 'Firefox',
+      'ChromeHeadless': {
+        base: 'Chrome',
         flags: [
           '-headless',
         ],
