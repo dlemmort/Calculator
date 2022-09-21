@@ -24,7 +24,7 @@ export class AppComponent {
   exponentiationResult : number = 0;
 
   Addition() : number{
-    return this.firstAdditionNumber - this.secondAdditionNumber;
+    return this.firstAdditionNumber + this.secondAdditionNumber;
   }
 
   Substraction() : number{
