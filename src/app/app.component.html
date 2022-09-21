@@ -10,19 +10,19 @@
       <h2>+</h2>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="firstAdditionNumber">
+      <input class="form-control" type="number" [(ngModel)]="firstAdditionNumber" id="firstAdd">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">+</h4>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="secondAdditionNumber">
+      <input class="form-control" type="number" [(ngModel)]="secondAdditionNumber" id="secondAdd">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">=</h4>
     </div>
     <div class="col-md-1">
-      <h4 class="text-center" *ngIf="!isNaN(Addition())">{{Addition()}}</h4>
+      <h4 class="text-center" id="addAnswer"  *ngIf="!isNaN(Addition())">{{Addition()}}</h4>
     </div>
   </div>
   <hr/>
@@ -31,19 +31,19 @@
       <h2>-</h2>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="firstSubstractionNumber">
+      <input class="form-control" type="number" [(ngModel)]="firstSubstractionNumber" id="firstSub">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">-</h4>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="secondSubstractionNumber">
+      <input class="form-control" type="number" [(ngModel)]="secondSubstractionNumber" id="secondSub">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">=</h4>
     </div>
     <div class="col-md-1">
-      <h4 class="text-center" *ngIf="!isNaN(Substraction())">{{Substraction()}}</h4>
+      <h4 class="text-center" id="subAnswer" *ngIf="!isNaN(Substraction())">{{Substraction()}}</h4>
     </div>
   </div>
   <hr/>
@@ -52,19 +52,19 @@
       <h2>x</h2>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="firstMultiplicationNumber">
+      <input class="form-control" type="number" [(ngModel)]="firstMultiplicationNumber" id="firstMul">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">x</h4>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="secondMultiplicationNumber">
+      <input class="form-control" type="number" [(ngModel)]="secondMultiplicationNumber" id="secondMul">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">=</h4>
     </div>
     <div class="col-md-1">
-      <h4 class="text-center" *ngIf="!isNaN(Multiplication())">{{Multiplication()}}</h4>
+      <h4 class="text-center" id="mulAnswer" *ngIf="!isNaN(Multiplication())">{{Multiplication()}}</h4>
     </div>
   </div>
   <hr/>
@@ -73,19 +73,19 @@
       <h2>/</h2>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="firstDivisionNumber">
+      <input class="form-control" type="number" [(ngModel)]="firstDivisionNumber" id="firstDiv">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">/</h4>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="secondDivisionNumber">
+      <input class="form-control" type="number" [(ngModel)]="secondDivisionNumber" id="secondDiv">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">=</h4>
     </div>
     <div class="col-md-1">
-      <h4 class="text-center" *ngIf="!isNaN(Division())">{{Division()}}</h4>
+      <h4 class="text-center" id="divAnswer" *ngIf="!isNaN(Division())">{{Division()}}</h4>
     </div>
   </div>
   <hr/>
@@ -94,19 +94,19 @@
       <h2>Λ</h2>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="firstExponentiationNumber">
+      <input class="form-control" type="number" [(ngModel)]="firstExponentiationNumber" id="firstExp">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">Λ</h4>
     </div>
     <div class="col-md-2">
-      <input class="form-control" type="number" [(ngModel)]="secondExponentiationNumber">
+      <input class="form-control" type="number" [(ngModel)]="secondExponentiationNumber" id="secondExp">
     </div>
     <div class="col-md-1">
       <h4 class="text-center">=</h4>
     </div>
     <div class="col-md-1">
-      <h4 class="text-center" *ngIf="!isNaN(Exponentiation())">{{Exponentiation()}}</h4>
+      <h4 class="text-center" id="expAnswer" *ngIf="!isNaN(Exponentiation())">{{Exponentiation()}}</h4>
     </div>
   </div>
   <hr/>

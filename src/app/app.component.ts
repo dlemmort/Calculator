@@ -9,22 +9,22 @@ export class AppComponent {
   title = 'Calculator';
   firstAdditionNumber : number;
   secondAdditionNumber : number;
-  additionResult : number;
+  additionResult : number = 0;
   firstSubstractionNumber : number;
   secondSubstractionNumber : number;
-  substractionResult : number;
+  substractionResult : number = 0;
   firstMultiplicationNumber : number;
   secondMultiplicationNumber : number;
-  multiplicationResult : number;
+  multiplicationResult : number = 0;
   firstDivisionNumber : number;
   secondDivisionNumber : number;
-  divisionResult : number;
+  divisionResult : number = 0;
   firstExponentiationNumber : number;
   secondExponentiationNumber : number;
-  exponentiationResult : number;
+  exponentiationResult : number = 0;
 
   Addition() : number{
-    return this.firstAdditionNumber + this.secondAdditionNumber;
+    return this.firstAdditionNumber - this.secondAdditionNumber;
   }
 
   Substraction() : number{
